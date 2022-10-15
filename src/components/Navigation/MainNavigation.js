@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import MainHeader from "./MainHeader";
+import { pic1 } from "../../assets/pic1.png";
 import Navlinks from "./Navlinks";
 import "./MainNavigation.css";
 
@@ -20,6 +21,8 @@ const MainNavigation = (props) => {
         <a class="nav-link" href="Login.js">Sign In</a>
       </li>
 
+
+      {/* <img className="img" src={pic1} alt="smart" /> */}
 
       {/* <nav>
         <Navlinks />

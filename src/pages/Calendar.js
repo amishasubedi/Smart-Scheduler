@@ -1,9 +1,10 @@
 import React from "react";
+import CalendarInfo from "../components/Calendar/CalendarInfo";
 
 const Calendar = () => {
   return (
     <div>
-      <Calendar />
+      <CalendarInfo />
     </div>
   );
 };

@@ -46,7 +46,7 @@ const events = [
 
 const CalendarInfo = () => {
   const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
-  const [allEvents, setAllEvents] = useState(events);
+  const [allEvents, setAllEvents] = useState(events); // default
 
   function handleAddEvent() {
     for (let i = 0; i < allEvents.length; i++) {

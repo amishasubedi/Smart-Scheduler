@@ -1,3 +1,14 @@
+* *:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #080710;
+}
+
 .Auth-form-container {
   display: flex;
   justify-content: center;
@@ -5,14 +16,38 @@
   width: 100vw;
   height: 100vh;
 }
+form h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
 
 .Auth-form {
-  width: 420px;
-  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  border-radius: 8px;
-  background-color: white;
+  align-items: center;
+  height: 520px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.433);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(8, 8, 8, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
 }
 
 .Auth-form-content {
@@ -24,22 +59,45 @@
   text-align: center;
   margin-bottom: 1em;
   font-size: 24px;
-  color: rgb(34, 34, 34);
+  color: rgb(255, 253, 253);
   font-weight: 800;
 }
 
 label {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(34, 34, 34);
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.btn btn-primary {
-  background-color: #04aa6d;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
+.button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: #000000;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(255, 0, 0);
+}
+
+.background {
+  width: 580px;
+  height: 610px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
 }

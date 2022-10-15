@@ -13,11 +13,11 @@ const Navlinks = (props) => {
       </li>
 
       <li>
-        <NavLink to="AddMeeting">Add Meeting</NavLink>
+        <NavLink to="AddEvents">Add Events</NavLink>
       </li>
 
       <li>
-        <NavLink to="/Sign in">Sign in</NavLink>
+        <NavLink to="/calendar">Calendar</NavLink>
       </li>
     </ul>
   );
