@@ -13,7 +13,7 @@ const Navlinks = (props) => {
       </li>
 
       <li>
-        <NavLink to="AddMeeting">xxx</NavLink>
+        <NavLink to="AddMeeting">Add Meeting</NavLink>
       </li>
 
       <li>
