@@ -33,54 +33,24 @@ writeUserData("anishasingh", "Anisha Singh", "newanishasingh@gmail.com", "theIma
 
 const emailInput = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
-const alertBox = document.querySelector(".alert-danger");
-const loader = document.querySelector(".loader");
-const contentContainer = document.querySelector("#content-container");
 
 const auth = firebase.auth();
-const db = firebase.firestore();
 
-auth.onAuthStateChanged(user => {
-    if (user) {
-        window.location.assign("/calendar");
-    } else {
-        loader.classList.add("hide");
-        loader.classList.remove("d-flex");
-        contentContainer.classList.remove("hide");
+const createUser = ({email, password}) => {
+    return (dispatch) => {
+        dispatch({type: CREATE_USER});
+
+        auth().createUserWithEmailAndPassword(email, password)
+            .then((user) => loginUserSuccess(dispatch, user))
+            .catch(() => createUserFail(dispatch));
     }
-});
-
-auth.useDeviceLanguage();
+}
 
 function signUp() {
-    event.preventDefault();
     const email = emailInput.value;
     const password = passwordInput.value;
-    auth.createUserWithEmailAndPassword(email, password)
-        .then(user => {
-            const userUid = user.user.uid;
-            const account = {
-                events: []
-            };
-            usersRef
-                .doc(userUid)
-                .set(account)
-                .then(() => {
-                    verifyUserEmail();
-                    window.location.assign("/calendar");
-                });
-        })
+    auth().createUserWithEmailAndPassword(email, password)
         .catch(error => {
-            alertBox.classList.remove("hide");
-            alertBox.innerHTML = error.message;
-            console.log("Error: " + error.message);
-        });
+            this.setState({error});
+        })
 }
-
-function verifyUserEmail() {
-    auth.currentUser.sendEmailVerification().then(() => {
-        console.log("email sent");
-    });
-}
-
-signUp();
