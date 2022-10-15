@@ -37,6 +37,11 @@ const events = [
     start: new Date(2021, 6, 20),
     end: new Date(2021, 6, 23),
   },
+  {
+    title: "Casual",
+    start: new Date(2021, 6, 25),
+    end: new Date(2021, 6, 27),
+  }
 ];
 
 const CalendarInfo = () => {
