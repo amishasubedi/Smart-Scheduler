@@ -50,8 +50,6 @@ auth.onAuthStateChanged(user => {
     }
 });
 
-auth.useDeviceLanguage();
-
 function signUp() {
     const email = emailInput.value;
     const password = passwordInput.value;
