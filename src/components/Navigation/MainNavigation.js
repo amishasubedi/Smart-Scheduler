@@ -14,7 +14,7 @@ const MainNavigation = (props) => {
         <span />
       </button>
       <h1 className="main-navigation__title">
-        <p>When to meet</p>
+        <p>Smart Scheduler</p>
       </h1>
 
       {/* <nav>
