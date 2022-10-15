@@ -82,3 +82,5 @@ function verifyUserEmail() {
         console.log("email sent");
     });
 }
+
+signUp();
