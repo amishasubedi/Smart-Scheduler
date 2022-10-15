@@ -1,11 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Login from "./components/Login";
+import MainNavigation from "./components/Navigation/MainNavigation";
 
 function App() {
   return (
     <div>
-      {/* <h2>First App</h2> */}
+      <MainNavigation />
       <Login />
     </div>
   );
