@@ -28,7 +28,6 @@ function writeUserData(userId, name, email, imageURL) {
     });
 }
 
-
 writeUserData("anishasingh", "Anisha Singh", "newanishasingh@gmail.com", "theImageURL");
 
 const emailInput = document.getElementById("emailInput");
