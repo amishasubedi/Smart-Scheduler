@@ -53,7 +53,6 @@ auth.onAuthStateChanged(user => {
 auth.useDeviceLanguage();
 
 function signUp() {
-    event.preventDefault();
     const email = emailInput.value;
     const password = passwordInput.value;
     auth.createUserWithEmailAndPassword(email, password)
