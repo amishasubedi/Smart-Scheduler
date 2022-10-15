@@ -19,6 +19,15 @@
 
 .main-navigation__title {
   color: white;
+  font-family: andale mono, monospace;
+}
+
+.main-navigation__signup {
+  color: white;
+  font-family: andale mono, monospace;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 
 .main-navigation__title a {

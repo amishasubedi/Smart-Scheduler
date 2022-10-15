@@ -16,6 +16,10 @@ const MainNavigation = (props) => {
       <h1 className="main-navigation__title">
         <p>Smart Scheduler</p>
       </h1>
+      <h3 className="main-navigation__signup">
+        <p>Sign In</p>
+      </h3>
+
 
       {/* <nav>
         <Navlinks />
