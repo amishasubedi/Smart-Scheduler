@@ -16,9 +16,9 @@ const MainNavigation = (props) => {
       <h1 className="main-navigation__title">
         <p>Smart Scheduler</p>
       </h1>
-      <h3 className="main-navigation__signup">
-        <p>Sign In</p>
-      </h3>
+      <li class="main-navigation__signup">
+        <a class="nav-link" href="Login.js">Sign In</a>
+      </li>
 
 
       {/* <nav>
