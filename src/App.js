@@ -1,6 +1,5 @@
 import "./App.css";
 import MainNavigation from "./components/Navigation/MainNavigation";
-import Navlinks from "./components/Navigation/Navlinks";
 import CalendarInfo from "./components/Calendar/CalendarInfo";
 import {
   BrowserRouter as Router,
