@@ -13,10 +13,6 @@ const Navlinks = (props) => {
       </li>
 
       <li>
-        <NavLink to="AddEvents">Add Events</NavLink>
-      </li>
-
-      <li>
         <NavLink to="/calendar">Calendar</NavLink>
       </li>
     </ul>

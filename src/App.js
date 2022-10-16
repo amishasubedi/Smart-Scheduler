@@ -36,7 +36,7 @@ function App() {
           </Route>
 
           <Route path="calendar">
-            <Calendar />
+            <CalendarInfo />
           </Route>
 
           <Route path="error">
