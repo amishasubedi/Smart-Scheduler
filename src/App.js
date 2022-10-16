@@ -22,35 +22,35 @@ function App() {
     //   <CalendarInfo /> */}
     // </div>
 
-    // <Router>
-    //   <MainNavigation />
-
-    //   <main>
-    //     <Switch>
-    //       <Route path="/" exact>
-    //         <LoginPage />
-    //       </Route>
-
-    //       <Route path="/home">
-    //         <Homepage />
-    //       </Route>
-
-    //       <Route path="calendar">
-    //         <Calendar />
-    //       </Route>
-
-    //       <Route path="error">
-    //         <ErrorPage />
-    //       </Route>
-
-    //       <Redirect to="/" />
-    //     </Switch>
-    //   </main>
-    // </Router>
-    <div>
+    <Router>
       <MainNavigation />
-      <Calendar />
-    </div>
+
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <LoginPage />
+          </Route>
+
+          <Route path="/home">
+            <Homepage />
+          </Route>
+
+          <Route path="calendar">
+            <Calendar />
+          </Route>
+
+          <Route path="error">
+            <ErrorPage />
+          </Route>
+
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </Router>
+    // <div>
+    //   <MainNavigation />
+    //   <Calendar />
+    // </div>
   );
 }
 
