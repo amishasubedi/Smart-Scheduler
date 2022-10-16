@@ -11,6 +11,7 @@ import {
 import LoginPage from "./pages/LoginPage";
 import Calendar from "./pages/Calendar";
 import ErrorPage from "./pages/ErrorPage";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
     //     <Switch>
     //       <Route path="/" exact>
     //         <LoginPage />
+    //       </Route>
+
+    //       <Route path="/home">
+    //         <Homepage />
     //       </Route>
 
     //       <Route path="calendar">
