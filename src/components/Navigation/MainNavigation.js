@@ -9,7 +9,6 @@ import "./MainNavigation.css";
 const MainNavigation = (props) => {
   return (
     <Fragment>
-      <img src={pic} alt="pic" className="img" />
       <MainHeader>
         {/* <button className="main-navigation__menu-btn">
         <span />

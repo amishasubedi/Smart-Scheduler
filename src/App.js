@@ -1,6 +1,5 @@
 import "./App.css";
 import MainNavigation from "./components/Navigation/MainNavigation";
-import CalendarInfo from "./components/Calendar/CalendarInfo";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,13 +13,6 @@ import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    // <div>
-    //   <MainNavigation />
-    //   <LoginPage />
-    //   {/* <MainNavigation />
-    //   <CalendarInfo /> */}
-    // </div>
-
     <Router>
       <MainNavigation />
 
@@ -34,11 +26,11 @@ function App() {
             <Homepage />
           </Route>
 
-          <Route path="calendar">
-            <CalendarInfo />
+          <Route path="/calendar">
+            <Calendar />
           </Route>
 
-          <Route path="error">
+          <Route path="/error">
             <ErrorPage />
           </Route>
 
